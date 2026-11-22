@@ -7,15 +7,15 @@ postings, with the same rules as its [remote job market stats page](https://remo
 
 **As of 2026-11-22** (UTC). Refreshed every Monday.
 
-> Seniority, single-country and full profession tables are not published in this edition (their public reader was not live yet); professions are the top 8.
-
 ## Headline
 
-- Open remote postings: **66,722**
-- Hire worldwide: **1,416** (2.1%)
-- United States only: **19,237** (28.8%)
-- Do not say where they hire: **23,046** (34.5%)
-- State pay: **21,800** (32.7%)
+- Open remote postings: **66,648**
+- Hire worldwide: **1,414** (2.1%)
+- Hire in exactly one country: **33,225** (49.9%)
+- Hire in several countries or a region: **8,980** (13.5%)
+- United States only: **19,215** (28.8%)
+- Do not say where they hire: **23,029** (34.6%)
+- State pay: **21,788** (32.7%)
 
 ## Files
 
@@ -25,10 +25,12 @@ postings, with the same rules as its [remote job market stats page](https://remo
 
 | File | Rows | Columns |
 |---|---|---|
-| `summary.csv` | 7 | `metric`, `value`, `share_pct`, `previous_value`, `change`, `previous_as_of` |
-| `countries.csv` | 32 | `code`, `name`, `open`, `share_pct`, `named`, `single_country`, `with_stated_pay`, `median_pay_usd`, `previous_open`, `change_open` |
-| `country_families.csv` | 355 | `country_code`, `country`, `family`, `open`, `previous_open`, `change_open` |
-| `professions.csv` | 8 | `profession`, `open`, `share_pct`, `with_stated_pay`, `previous_open`, `change_open` |
+| `summary.csv` | 9 | `metric`, `value`, `share_pct`, `previous_value`, `change`, `previous_as_of` |
+| `geography.csv` | 4 | `scope`, `open`, `share_pct`, `previous_open`, `change_open` |
+| `countries.csv` | 35 | `code`, `name`, `open`, `share_pct`, `named`, `single_country`, `with_stated_pay`, `median_pay_usd`, `previous_open`, `change_open` |
+| `country_families.csv` | 430 | `country_code`, `country`, `family`, `open`, `previous_open`, `change_open` |
+| `professions.csv` | 85 | `profession`, `open`, `share_pct`, `with_stated_pay`, `previous_open`, `change_open` |
+| `seniority.csv` | 7 | `band`, `open`, `share_pct`, `with_stated_pay`, `pay_p25_usd`, `pay_median_usd`, `pay_p75_usd`, `previous_open`, `change_open` |
 | `pay_by_role.csv` | 43 | `role`, `postings_with_pay`, `pay_p25_usd`, `pay_median_usd`, `pay_p75_usd`, `window_days` |
 | `pay_by_role_seniority.csv` | 74 | `role`, `band`, `postings_with_pay`, `pay_p25_usd`, `pay_median_usd`, `pay_p75_usd`, `window_days` |
 
