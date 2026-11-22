@@ -1,0 +1,10 @@
+The data in this repository (everything under latest/ and editions/, and the
+figures in README.md) is licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: "Source: RemoteHunt remote jobs data, https://remotehunt.app",
+with a link to https://remotehunt.app.
+
+The builder script (scripts/build_public_dataset.py) is released under the
+same licence.

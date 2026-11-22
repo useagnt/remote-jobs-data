@@ -1,0 +1,4399 @@
+{
+  "dataset": "remote-jobs-data",
+  "as_of": "2026-11-22",
+  "previous_as_of": null,
+  "publisher": "RemoteHunt",
+  "homepage": "https://remotehunt.app",
+  "license": "CC BY 4.0",
+  "attribution": "RemoteHunt remote jobs data (https://remotehunt.app)",
+  "definitions": {
+    "open_postings": "Open remote job postings in RemoteHunt's public index on the counting day: live, remote, and listed on the site's public job pages.",
+    "open (country)": "Postings that can hire in the country: they say they hire worldwide, or their list of countries or regions includes it.",
+    "named (country)": "Postings whose list names the country itself, counted inside open.",
+    "single_country": "Postings whose list holds exactly one country.",
+    "multi_country": "Postings that list two or more countries, or a region.",
+    "hire_worldwide": "Postings that say they hire anywhere.",
+    "hiring_location_not_stated": "Postings that state no readable hiring location.",
+    "us_only": "Postings whose list holds the United States and nothing else.",
+    "europe_only": "Postings whose list holds only European countries.",
+    "with_stated_pay": "Postings that state a salary or a salary range.",
+    "pay": "Annual US dollars, the midpoint of the stated range. Pay by role and by role x seniority covers postings published in the last 90 days that state a full range; a figure needs at least 20 such postings, else it is left empty.",
+    "profession": "The posting's profession as RemoteHunt files it; professions with fewer than 20 open postings are left out of the table, not counted as 0.",
+    "family": "A group of professions (Engineering, Sales, ...) as on the site's country pages.",
+    "seniority": "Junior (intern, junior, entry), Mid-level, Senior, Staff & Principal (lead, staff, principal), Management (manager, director, VP, C-level), Other, Not stated.",
+    "change": "Value minus the value in the previous edition (normally one week earlier); empty when either value is not measured."
+  },
+  "notes": [
+    "Seniority, single-country and full profession tables are not published in this edition (their public reader was not live yet); professions are the top 8."
+  ],
+  "tables": {
+    "summary": [
+      {
+        "metric": "open_postings",
+        "value": 66722,
+        "share_pct": null,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      },
+      {
+        "metric": "hire_worldwide",
+        "value": 1416,
+        "share_pct": 2.1,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      },
+      {
+        "metric": "hiring_location_not_stated",
+        "value": 23046,
+        "share_pct": 34.5,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      },
+      {
+        "metric": "us_only",
+        "value": 19237,
+        "share_pct": 28.8,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      },
+      {
+        "metric": "europe_only",
+        "value": 7428,
+        "share_pct": 11.1,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      },
+      {
+        "metric": "with_stated_pay",
+        "value": 21800,
+        "share_pct": 32.7,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      },
+      {
+        "metric": "profession_not_labelled",
+        "value": 23567,
+        "share_pct": 35.3,
+        "previous_value": null,
+        "change": null,
+        "previous_as_of": null
+      }
+    ],
+    "geography": [],
+    "countries": [
+      {
+        "code": "US",
+        "name": "United States",
+        "open": 24325,
+        "share_pct": 36.5,
+        "named": 21828,
+        "single_country": null,
+        "with_stated_pay": 12769,
+        "median_pay_usd": 152500,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "GB",
+        "name": "United Kingdom",
+        "open": 5725,
+        "share_pct": 8.6,
+        "named": 2675,
+        "single_country": null,
+        "with_stated_pay": 1071,
+        "median_pay_usd": 133000,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "DE",
+        "name": "Germany",
+        "open": 5469,
+        "share_pct": 8.2,
+        "named": 1393,
+        "single_country": null,
+        "with_stated_pay": 965,
+        "median_pay_usd": 125000,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "BR",
+        "name": "Brazil",
+        "open": 5028,
+        "share_pct": 7.5,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "ES",
+        "name": "Spain",
+        "open": 4934,
+        "share_pct": 7.4,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "MX",
+        "name": "Mexico",
+        "open": 4572,
+        "share_pct": 6.9,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "PT",
+        "name": "Portugal",
+        "open": 4564,
+        "share_pct": 6.8,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "RO",
+        "name": "Romania",
+        "open": 4545,
+        "share_pct": 6.8,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "NL",
+        "name": "Netherlands",
+        "open": 4486,
+        "share_pct": 6.7,
+        "named": 401,
+        "single_country": null,
+        "with_stated_pay": 793,
+        "median_pay_usd": 133500,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "GR",
+        "name": "Greece",
+        "open": 4444,
+        "share_pct": 6.7,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "IT",
+        "name": "Italy",
+        "open": 4366,
+        "share_pct": 6.5,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "BG",
+        "name": "Bulgaria",
+        "open": 4355,
+        "share_pct": 6.5,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "CO",
+        "name": "Colombia",
+        "open": 3938,
+        "share_pct": 5.9,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "AR",
+        "name": "Argentina",
+        "open": 3808,
+        "share_pct": 5.7,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "UA",
+        "name": "Ukraine",
+        "open": 3650,
+        "share_pct": 5.5,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "RS",
+        "name": "Serbia",
+        "open": 3591,
+        "share_pct": 5.4,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "PH",
+        "name": "Philippines",
+        "open": 3418,
+        "share_pct": 5.1,
+        "named": 1670,
+        "single_country": null,
+        "with_stated_pay": 448,
+        "median_pay_usd": 140000,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "TR",
+        "name": "Turkey",
+        "open": 3403,
+        "share_pct": 5.1,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "ZA",
+        "name": "South Africa",
+        "open": 3242,
+        "share_pct": 4.9,
+        "named": 585,
+        "single_country": null,
+        "with_stated_pay": 486,
+        "median_pay_usd": 145000,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "IN",
+        "name": "India",
+        "open": 3035,
+        "share_pct": 4.5,
+        "named": 1306,
+        "single_country": null,
+        "with_stated_pay": 422,
+        "median_pay_usd": 148250,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "EG",
+        "name": "Egypt",
+        "open": 2948,
+        "share_pct": 4.4,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "AE",
+        "name": "United Arab Emirates",
+        "open": 2806,
+        "share_pct": 4.2,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "KE",
+        "name": "Kenya",
+        "open": 2725,
+        "share_pct": 4.1,
+        "named": 61,
+        "single_country": null,
+        "with_stated_pay": 465,
+        "median_pay_usd": 148000,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "NG",
+        "name": "Nigeria",
+        "open": 2718,
+        "share_pct": 4.1,
+        "named": 56,
+        "single_country": null,
+        "with_stated_pay": 459,
+        "median_pay_usd": 147250,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "GH",
+        "name": "Ghana",
+        "open": 2687,
+        "share_pct": 4.0,
+        "named": 24,
+        "single_country": null,
+        "with_stated_pay": 464,
+        "median_pay_usd": 147750,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "ID",
+        "name": "Indonesia",
+        "open": 1970,
+        "share_pct": 3.0,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "MY",
+        "name": "Malaysia",
+        "open": 1959,
+        "share_pct": 2.9,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "PK",
+        "name": "Pakistan",
+        "open": 1945,
+        "share_pct": 2.9,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "VN",
+        "name": "Vietnam",
+        "open": 1909,
+        "share_pct": 2.9,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "BD",
+        "name": "Bangladesh",
+        "open": 1798,
+        "share_pct": 2.7,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "LK",
+        "name": "Sri Lanka",
+        "open": 1796,
+        "share_pct": 2.7,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "code": "NP",
+        "name": "Nepal",
+        "open": 1749,
+        "share_pct": 2.6,
+        "named": null,
+        "single_country": null,
+        "with_stated_pay": null,
+        "median_pay_usd": null,
+        "previous_open": null,
+        "change_open": null
+      }
+    ],
+    "country_families": [
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Engineering",
+        "open": 362,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Marketing",
+        "open": 161,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Operations",
+        "open": 144,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Sales",
+        "open": 131,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "HR and admin",
+        "open": 116,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Product",
+        "open": 114,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Finance and legal",
+        "open": 89,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Customer support",
+        "open": 61,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Design",
+        "open": 40,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Data",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "",
+        "country": "Anywhere (hires worldwide)",
+        "family": "Research",
+        "open": 22,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Engineering",
+        "open": 968,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Sales",
+        "open": 406,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Operations",
+        "open": 366,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Marketing",
+        "open": 350,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Leadership",
+        "open": 329,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "HR and admin",
+        "open": 242,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Finance and legal",
+        "open": 200,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Customer support",
+        "open": 185,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Product",
+        "open": 184,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Design",
+        "open": 84,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Data",
+        "open": 71,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Video and media",
+        "open": 43,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AR",
+        "country": "Argentina",
+        "family": "Research",
+        "open": 36,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Engineering",
+        "open": 441,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Sales",
+        "open": 213,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Marketing",
+        "open": 190,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Operations",
+        "open": 163,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "HR and admin",
+        "open": 135,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Product",
+        "open": 126,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Finance and legal",
+        "open": 110,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Customer support",
+        "open": 106,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Design",
+        "open": 47,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Research",
+        "open": 36,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Data",
+        "open": 35,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BD",
+        "country": "Bangladesh",
+        "family": "Video and media",
+        "open": 29,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Engineering",
+        "open": 1531,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Sales",
+        "open": 493,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Operations",
+        "open": 485,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Marketing",
+        "open": 379,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Leadership",
+        "open": 329,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Customer support",
+        "open": 277,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "HR and admin",
+        "open": 271,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Finance and legal",
+        "open": 252,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Product",
+        "open": 238,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Data",
+        "open": 128,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Design",
+        "open": 124,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Video and media",
+        "open": 44,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BR",
+        "country": "Brazil",
+        "family": "Research",
+        "open": 43,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Engineering",
+        "open": 1083,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Sales",
+        "open": 480,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Marketing",
+        "open": 366,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Leadership",
+        "open": 364,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Operations",
+        "open": 338,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Product",
+        "open": 290,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Customer support",
+        "open": 273,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Finance and legal",
+        "open": 244,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "HR and admin",
+        "open": 198,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Design",
+        "open": 105,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Data",
+        "open": 80,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "BG",
+        "country": "Bulgaria",
+        "family": "Research",
+        "open": 53,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Engineering",
+        "open": 980,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Sales",
+        "open": 430,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Operations",
+        "open": 363,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Marketing",
+        "open": 356,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Leadership",
+        "open": 329,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "HR and admin",
+        "open": 258,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Finance and legal",
+        "open": 230,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Customer support",
+        "open": 202,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Product",
+        "open": 186,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Design",
+        "open": 86,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Data",
+        "open": 68,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Video and media",
+        "open": 43,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "CO",
+        "country": "Colombia",
+        "family": "Research",
+        "open": 37,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Engineering",
+        "open": 705,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Sales",
+        "open": 330,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Leadership",
+        "open": 292,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Marketing",
+        "open": 242,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Operations",
+        "open": 233,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Product",
+        "open": 171,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Finance and legal",
+        "open": 164,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "HR and admin",
+        "open": 163,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Customer support",
+        "open": 151,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Design",
+        "open": 58,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Data",
+        "open": 45,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Research",
+        "open": 38,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "EG",
+        "country": "Egypt",
+        "family": "Video and media",
+        "open": 29,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Engineering",
+        "open": 632,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Sales",
+        "open": 293,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Leadership",
+        "open": 291,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Marketing",
+        "open": 224,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Operations",
+        "open": 215,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Product",
+        "open": 169,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Finance and legal",
+        "open": 156,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "HR and admin",
+        "open": 149,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Customer support",
+        "open": 133,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Design",
+        "open": 50,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Data",
+        "open": 42,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GH",
+        "country": "Ghana",
+        "family": "Research",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Engineering",
+        "open": 1094,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Sales",
+        "open": 476,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Leadership",
+        "open": 364,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Customer support",
+        "open": 363,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Marketing",
+        "open": 363,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Operations",
+        "open": 332,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Product",
+        "open": 280,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Finance and legal",
+        "open": 246,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "HR and admin",
+        "open": 195,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Design",
+        "open": 107,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Data",
+        "open": 79,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "GR",
+        "country": "Greece",
+        "family": "Research",
+        "open": 53,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Engineering",
+        "open": 919,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Sales",
+        "open": 297,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Operations",
+        "open": 278,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Marketing",
+        "open": 269,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Customer support",
+        "open": 230,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Product",
+        "open": 191,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "HR and admin",
+        "open": 185,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Finance and legal",
+        "open": 173,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Data",
+        "open": 80,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Design",
+        "open": 66,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Research",
+        "open": 50,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IN",
+        "country": "India",
+        "family": "Video and media",
+        "open": 30,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Engineering",
+        "open": 490,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Sales",
+        "open": 229,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Marketing",
+        "open": 195,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Operations",
+        "open": 178,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "HR and admin",
+        "open": 150,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Product",
+        "open": 148,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Finance and legal",
+        "open": 112,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Customer support",
+        "open": 111,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Design",
+        "open": 60,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Data",
+        "open": 38,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Research",
+        "open": 38,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ID",
+        "country": "Indonesia",
+        "family": "Video and media",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Engineering",
+        "open": 1080,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Sales",
+        "open": 518,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Leadership",
+        "open": 366,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Marketing",
+        "open": 360,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Operations",
+        "open": 321,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Product",
+        "open": 282,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Finance and legal",
+        "open": 245,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Customer support",
+        "open": 242,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "HR and admin",
+        "open": 199,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Design",
+        "open": 108,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Data",
+        "open": 78,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Research",
+        "open": 51,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "IT",
+        "country": "Italy",
+        "family": "Video and media",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Engineering",
+        "open": 637,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Sales",
+        "open": 299,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Leadership",
+        "open": 291,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Operations",
+        "open": 228,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Marketing",
+        "open": 226,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Product",
+        "open": 170,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Finance and legal",
+        "open": 162,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "HR and admin",
+        "open": 154,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Customer support",
+        "open": 135,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Design",
+        "open": 49,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Data",
+        "open": 42,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "KE",
+        "country": "Kenya",
+        "family": "Research",
+        "open": 32,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Engineering",
+        "open": 465,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Sales",
+        "open": 233,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Marketing",
+        "open": 197,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Operations",
+        "open": 180,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "HR and admin",
+        "open": 156,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Product",
+        "open": 129,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Customer support",
+        "open": 121,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Finance and legal",
+        "open": 120,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Design",
+        "open": 59,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Data",
+        "open": 39,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Research",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MY",
+        "country": "Malaysia",
+        "family": "Video and media",
+        "open": 31,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Engineering",
+        "open": 1148,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Sales",
+        "open": 531,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Operations",
+        "open": 419,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Marketing",
+        "open": 406,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Leadership",
+        "open": 362,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "HR and admin",
+        "open": 272,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Finance and legal",
+        "open": 265,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Customer support",
+        "open": 258,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Product",
+        "open": 228,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Data",
+        "open": 95,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Design",
+        "open": 93,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Research",
+        "open": 40,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "MX",
+        "country": "Mexico",
+        "family": "Video and media",
+        "open": 40,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Engineering",
+        "open": 435,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Sales",
+        "open": 209,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Marketing",
+        "open": 190,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Operations",
+        "open": 159,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "HR and admin",
+        "open": 133,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Product",
+        "open": 126,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Finance and legal",
+        "open": 110,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Customer support",
+        "open": 106,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Design",
+        "open": 46,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Data",
+        "open": 35,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NP",
+        "country": "Nepal",
+        "family": "Research",
+        "open": 33,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Engineering",
+        "open": 634,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Sales",
+        "open": 301,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Leadership",
+        "open": 292,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Marketing",
+        "open": 228,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Operations",
+        "open": 218,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Product",
+        "open": 168,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Finance and legal",
+        "open": 161,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "HR and admin",
+        "open": 151,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Customer support",
+        "open": 136,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Design",
+        "open": 52,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Data",
+        "open": 42,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "NG",
+        "country": "Nigeria",
+        "family": "Research",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Engineering",
+        "open": 474,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Sales",
+        "open": 232,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Marketing",
+        "open": 211,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Operations",
+        "open": 182,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "HR and admin",
+        "open": 141,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Finance and legal",
+        "open": 134,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Product",
+        "open": 132,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Customer support",
+        "open": 123,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Design",
+        "open": 49,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Data",
+        "open": 41,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PK",
+        "country": "Pakistan",
+        "family": "Research",
+        "open": 36,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Engineering",
+        "open": 585,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Operations",
+        "open": 415,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Marketing",
+        "open": 389,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Sales",
+        "open": 360,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Finance and legal",
+        "open": 349,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "HR and admin",
+        "open": 341,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Customer support",
+        "open": 258,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Product",
+        "open": 160,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Design",
+        "open": 109,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Data",
+        "open": 58,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Video and media",
+        "open": 56,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Research",
+        "open": 36,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PH",
+        "country": "Philippines",
+        "family": "Construction",
+        "open": 20,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Engineering",
+        "open": 1172,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Sales",
+        "open": 497,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Marketing",
+        "open": 371,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Leadership",
+        "open": 364,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Operations",
+        "open": 352,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Product",
+        "open": 308,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Customer support",
+        "open": 293,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Finance and legal",
+        "open": 254,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "HR and admin",
+        "open": 203,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Design",
+        "open": 113,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Data",
+        "open": 82,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "PT",
+        "country": "Portugal",
+        "family": "Research",
+        "open": 52,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Engineering",
+        "open": 1173,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Sales",
+        "open": 496,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Operations",
+        "open": 396,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Marketing",
+        "open": 373,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Leadership",
+        "open": 364,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Product",
+        "open": 288,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Finance and legal",
+        "open": 247,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Customer support",
+        "open": 240,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "HR and admin",
+        "open": 200,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Design",
+        "open": 109,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Data",
+        "open": 88,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Research",
+        "open": 54,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RO",
+        "country": "Romania",
+        "family": "Video and media",
+        "open": 35,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Engineering",
+        "open": 877,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Sales",
+        "open": 398,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Leadership",
+        "open": 361,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Operations",
+        "open": 316,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Marketing",
+        "open": 311,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Product",
+        "open": 219,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Finance and legal",
+        "open": 200,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "HR and admin",
+        "open": 181,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Customer support",
+        "open": 171,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Design",
+        "open": 78,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Data",
+        "open": 56,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "RS",
+        "country": "Serbia",
+        "family": "Research",
+        "open": 40,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Engineering",
+        "open": 669,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Sales",
+        "open": 410,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Leadership",
+        "open": 291,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Operations",
+        "open": 288,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Marketing",
+        "open": 282,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "HR and admin",
+        "open": 213,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Finance and legal",
+        "open": 210,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Customer support",
+        "open": 199,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Product",
+        "open": 178,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Design",
+        "open": 55,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Data",
+        "open": 47,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Research",
+        "open": 33,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ZA",
+        "country": "South Africa",
+        "family": "Video and media",
+        "open": 32,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Engineering",
+        "open": 1274,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Sales",
+        "open": 558,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Marketing",
+        "open": 409,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Operations",
+        "open": 404,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Leadership",
+        "open": 364,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Product",
+        "open": 335,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Customer support",
+        "open": 308,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Finance and legal",
+        "open": 266,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "HR and admin",
+        "open": 213,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Design",
+        "open": 122,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Data",
+        "open": 87,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Research",
+        "open": 51,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "ES",
+        "country": "Spain",
+        "family": "Video and media",
+        "open": 37,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Engineering",
+        "open": 444,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Sales",
+        "open": 214,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Marketing",
+        "open": 199,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Operations",
+        "open": 164,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "HR and admin",
+        "open": 134,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Product",
+        "open": 126,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Finance and legal",
+        "open": 116,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Customer support",
+        "open": 109,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Design",
+        "open": 48,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Data",
+        "open": 37,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "LK",
+        "country": "Sri Lanka",
+        "family": "Research",
+        "open": 33,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Engineering",
+        "open": 806,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Sales",
+        "open": 381,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Leadership",
+        "open": 362,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Marketing",
+        "open": 281,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Operations",
+        "open": 244,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Product",
+        "open": 218,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Finance and legal",
+        "open": 198,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "HR and admin",
+        "open": 176,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Customer support",
+        "open": 163,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Design",
+        "open": 77,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Data",
+        "open": 50,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Research",
+        "open": 48,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "TR",
+        "country": "Turkey",
+        "family": "Video and media",
+        "open": 30,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Engineering",
+        "open": 872,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Sales",
+        "open": 393,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Leadership",
+        "open": 362,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Marketing",
+        "open": 346,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Operations",
+        "open": 276,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Product",
+        "open": 232,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Finance and legal",
+        "open": 218,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Customer support",
+        "open": 187,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "HR and admin",
+        "open": 181,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Design",
+        "open": 92,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Data",
+        "open": 63,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "UA",
+        "country": "Ukraine",
+        "family": "Research",
+        "open": 40,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Engineering",
+        "open": 651,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Sales",
+        "open": 335,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Leadership",
+        "open": 292,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Marketing",
+        "open": 234,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Operations",
+        "open": 218,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Product",
+        "open": 168,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Finance and legal",
+        "open": 159,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "HR and admin",
+        "open": 158,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Customer support",
+        "open": 142,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Design",
+        "open": 50,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Data",
+        "open": 43,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "AE",
+        "country": "United Arab Emirates",
+        "family": "Research",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Engineering",
+        "open": 470,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Sales",
+        "open": 228,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Marketing",
+        "open": 193,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Operations",
+        "open": 172,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "HR and admin",
+        "open": 145,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Product",
+        "open": 143,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Finance and legal",
+        "open": 116,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Customer support",
+        "open": 109,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Design",
+        "open": 54,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Data",
+        "open": 38,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Research",
+        "open": 34,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "country_code": "VN",
+        "country": "Vietnam",
+        "family": "Video and media",
+        "open": 30,
+        "previous_open": null,
+        "change_open": null
+      }
+    ],
+    "professions": [
+      {
+        "profession": "Account Executive",
+        "open": 2925,
+        "share_pct": 4.4,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Marketing Manager",
+        "open": 2881,
+        "share_pct": 4.3,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Operations",
+        "open": 2039,
+        "share_pct": 3.1,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Project Manager",
+        "open": 1648,
+        "share_pct": 2.5,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Account Manager",
+        "open": 1458,
+        "share_pct": 2.2,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Implementation Consultant",
+        "open": 1410,
+        "share_pct": 2.1,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Business Analyst",
+        "open": 1352,
+        "share_pct": 2.0,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      },
+      {
+        "profession": "Solutions Engineer",
+        "open": 1251,
+        "share_pct": 1.9,
+        "with_stated_pay": null,
+        "previous_open": null,
+        "change_open": null
+      }
+    ],
+    "seniority": [],
+    "pay_by_role": [
+      {
+        "role": "Software engineer",
+        "postings_with_pay": 1025,
+        "pay_p25_usd": 137500,
+        "pay_median_usd": 180000,
+        "pay_p75_usd": 214000,
+        "window_days": 90
+      },
+      {
+        "role": "Account executive",
+        "postings_with_pay": 791,
+        "pay_p25_usd": 113100,
+        "pay_median_usd": 150000,
+        "pay_p75_usd": 212261,
+        "window_days": 90
+      },
+      {
+        "role": "Product manager",
+        "postings_with_pay": 747,
+        "pay_p25_usd": 139277,
+        "pay_median_usd": 170000,
+        "pay_p75_usd": 199402,
+        "window_days": 90
+      },
+      {
+        "role": "Account manager",
+        "postings_with_pay": 455,
+        "pay_p25_usd": 85000,
+        "pay_median_usd": 115750,
+        "pay_p75_usd": 145000,
+        "window_days": 90
+      },
+      {
+        "role": "Marketing manager",
+        "postings_with_pay": 413,
+        "pay_p25_usd": 106800,
+        "pay_median_usd": 133621,
+        "pay_p75_usd": 160000,
+        "window_days": 90
+      },
+      {
+        "role": "Security engineer",
+        "postings_with_pay": 309,
+        "pay_p25_usd": 135550,
+        "pay_median_usd": 185000,
+        "pay_p75_usd": 222500,
+        "window_days": 90
+      },
+      {
+        "role": "Data engineer",
+        "postings_with_pay": 295,
+        "pay_p25_usd": 132841,
+        "pay_median_usd": 165852,
+        "pay_p75_usd": 207812,
+        "window_days": 90
+      },
+      {
+        "role": "Engineering manager",
+        "postings_with_pay": 285,
+        "pay_p25_usd": 159199,
+        "pay_median_usd": 205000,
+        "pay_p75_usd": 238500,
+        "window_days": 90
+      },
+      {
+        "role": "Platform engineer",
+        "postings_with_pay": 279,
+        "pay_p25_usd": 131750,
+        "pay_median_usd": 187000,
+        "pay_p75_usd": 225500,
+        "window_days": 90
+      },
+      {
+        "role": "Operations manager",
+        "postings_with_pay": 249,
+        "pay_p25_usd": 106500,
+        "pay_median_usd": 135000,
+        "pay_p75_usd": 157500,
+        "window_days": 90
+      },
+      {
+        "role": "Sales manager",
+        "postings_with_pay": 220,
+        "pay_p25_usd": 100000,
+        "pay_median_usd": 131250,
+        "pay_p75_usd": 165000,
+        "window_days": 90
+      },
+      {
+        "role": "Project manager",
+        "postings_with_pay": 216,
+        "pay_p25_usd": 89562,
+        "pay_median_usd": 118162,
+        "pay_p75_usd": 140000,
+        "window_days": 90
+      },
+      {
+        "role": "Customer success manager",
+        "postings_with_pay": 199,
+        "pay_p25_usd": 85000,
+        "pay_median_usd": 117220,
+        "pay_p75_usd": 147312,
+        "window_days": 90
+      },
+      {
+        "role": "Sales engineer",
+        "postings_with_pay": 129,
+        "pay_p25_usd": 122500,
+        "pay_median_usd": 165000,
+        "pay_p75_usd": 207500,
+        "window_days": 90
+      },
+      {
+        "role": "Accountant",
+        "postings_with_pay": 123,
+        "pay_p25_usd": 73750,
+        "pay_median_usd": 90000,
+        "pay_p75_usd": 107750,
+        "window_days": 90
+      },
+      {
+        "role": "Solutions engineer",
+        "postings_with_pay": 122,
+        "pay_p25_usd": 133375,
+        "pay_median_usd": 180000,
+        "pay_p75_usd": 219500,
+        "window_days": 90
+      },
+      {
+        "role": "Backend engineer",
+        "postings_with_pay": 120,
+        "pay_p25_usd": 131375,
+        "pay_median_usd": 180000,
+        "pay_p75_usd": 206250,
+        "window_days": 90
+      },
+      {
+        "role": "Full stack engineer",
+        "postings_with_pay": 112,
+        "pay_p25_usd": 127429,
+        "pay_median_usd": 163750,
+        "pay_p75_usd": 196250,
+        "window_days": 90
+      },
+      {
+        "role": "Data scientist",
+        "postings_with_pay": 104,
+        "pay_p25_usd": 137750,
+        "pay_median_usd": 174625,
+        "pay_p75_usd": 200000,
+        "window_days": 90
+      },
+      {
+        "role": "Recruiter",
+        "postings_with_pay": 103,
+        "pay_p25_usd": 82500,
+        "pay_median_usd": 117164,
+        "pay_p75_usd": 152000,
+        "window_days": 90
+      },
+      {
+        "role": "Product designer",
+        "postings_with_pay": 100,
+        "pay_p25_usd": 134500,
+        "pay_median_usd": 165750,
+        "pay_p75_usd": 192375,
+        "window_days": 90
+      },
+      {
+        "role": "Machine learning engineer",
+        "postings_with_pay": 89,
+        "pay_p25_usd": 182500,
+        "pay_median_usd": 208125,
+        "pay_p75_usd": 260050,
+        "window_days": 90
+      },
+      {
+        "role": "Sales development representative",
+        "postings_with_pay": 82,
+        "pay_p25_usd": 54610,
+        "pay_median_usd": 65000,
+        "pay_p75_usd": 77500,
+        "window_days": 90
+      },
+      {
+        "role": "Cloud engineer",
+        "postings_with_pay": 77,
+        "pay_p25_usd": 128000,
+        "pay_median_usd": 152500,
+        "pay_p75_usd": 196500,
+        "window_days": 90
+      },
+      {
+        "role": "Data analyst",
+        "postings_with_pay": 74,
+        "pay_p25_usd": 90000,
+        "pay_median_usd": 114988,
+        "pay_p75_usd": 142325,
+        "window_days": 90
+      },
+      {
+        "role": "Partnerships manager",
+        "postings_with_pay": 66,
+        "pay_p25_usd": 99062,
+        "pay_median_usd": 128249,
+        "pay_p75_usd": 156589,
+        "window_days": 90
+      },
+      {
+        "role": "Operations specialist",
+        "postings_with_pay": 57,
+        "pay_p25_usd": 65000,
+        "pay_median_usd": 81375,
+        "pay_p75_usd": 100000,
+        "window_days": 90
+      },
+      {
+        "role": "Business analyst",
+        "postings_with_pay": 54,
+        "pay_p25_usd": 85500,
+        "pay_median_usd": 108645,
+        "pay_p75_usd": 120938,
+        "window_days": 90
+      },
+      {
+        "role": "Site reliability engineer",
+        "postings_with_pay": 53,
+        "pay_p25_usd": 140000,
+        "pay_median_usd": 160425,
+        "pay_p75_usd": 190000,
+        "window_days": 90
+      },
+      {
+        "role": "Support specialist",
+        "postings_with_pay": 53,
+        "pay_p25_usd": 54915,
+        "pay_median_usd": 65000,
+        "pay_p75_usd": 75000,
+        "window_days": 90
+      },
+      {
+        "role": "Customer support",
+        "postings_with_pay": 49,
+        "pay_p25_usd": 55000,
+        "pay_median_usd": 80250,
+        "pay_p75_usd": 112500,
+        "window_days": 90
+      },
+      {
+        "role": "Operations analyst",
+        "postings_with_pay": 49,
+        "pay_p25_usd": 77500,
+        "pay_median_usd": 95000,
+        "pay_p75_usd": 115750,
+        "window_days": 90
+      },
+      {
+        "role": "Devops engineer",
+        "postings_with_pay": 48,
+        "pay_p25_usd": 118625,
+        "pay_median_usd": 147500,
+        "pay_p75_usd": 191375,
+        "window_days": 90
+      },
+      {
+        "role": "Financial analyst",
+        "postings_with_pay": 46,
+        "pay_p25_usd": 70238,
+        "pay_median_usd": 106360,
+        "pay_p75_usd": 121988,
+        "window_days": 90
+      },
+      {
+        "role": "Marketing specialist",
+        "postings_with_pay": 43,
+        "pay_p25_usd": 38500,
+        "pay_median_usd": 70000,
+        "pay_p75_usd": 88750,
+        "window_days": 90
+      },
+      {
+        "role": "Network engineer",
+        "postings_with_pay": 42,
+        "pay_p25_usd": 98125,
+        "pay_median_usd": 147150,
+        "pay_p75_usd": 188602,
+        "window_days": 90
+      },
+      {
+        "role": "Qa engineer",
+        "postings_with_pay": 35,
+        "pay_p25_usd": 75975,
+        "pay_median_usd": 97500,
+        "pay_p75_usd": 136426,
+        "window_days": 90
+      },
+      {
+        "role": "Executive assistant",
+        "postings_with_pay": 33,
+        "pay_p25_usd": 62884,
+        "pay_median_usd": 101250,
+        "pay_p75_usd": 123250,
+        "window_days": 90
+      },
+      {
+        "role": "Frontend engineer",
+        "postings_with_pay": 33,
+        "pay_p25_usd": 164054,
+        "pay_median_usd": 190000,
+        "pay_p75_usd": 200000,
+        "window_days": 90
+      },
+      {
+        "role": "Mobile engineer",
+        "postings_with_pay": 29,
+        "pay_p25_usd": 160000,
+        "pay_median_usd": 202482,
+        "pay_p75_usd": 227000,
+        "window_days": 90
+      },
+      {
+        "role": "Legal counsel",
+        "postings_with_pay": 28,
+        "pay_p25_usd": 141512,
+        "pay_median_usd": 170575,
+        "pay_p75_usd": 211500,
+        "window_days": 90
+      },
+      {
+        "role": "Implementation consultant",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 81622,
+        "pay_median_usd": 110000,
+        "pay_p75_usd": 126524,
+        "window_days": 90
+      },
+      {
+        "role": "Community manager",
+        "postings_with_pay": 20,
+        "pay_p25_usd": 97625,
+        "pay_median_usd": 135200,
+        "pay_p75_usd": 161338,
+        "window_days": 90
+      }
+    ],
+    "pay_by_role_seniority": [
+      {
+        "role": "Account executive",
+        "band": "Junior",
+        "postings_with_pay": 33,
+        "pay_p25_usd": 69500,
+        "pay_median_usd": 95650,
+        "pay_p75_usd": 130000,
+        "window_days": 90
+      },
+      {
+        "role": "Account executive",
+        "band": "Mid-level",
+        "postings_with_pay": 348,
+        "pay_p25_usd": 104562,
+        "pay_median_usd": 135000,
+        "pay_p75_usd": 185000,
+        "window_days": 90
+      },
+      {
+        "role": "Account executive",
+        "band": "Senior",
+        "postings_with_pay": 312,
+        "pay_p25_usd": 137500,
+        "pay_median_usd": 170000,
+        "pay_p75_usd": 300000,
+        "window_days": 90
+      },
+      {
+        "role": "Account manager",
+        "band": "Mid-level",
+        "postings_with_pay": 215,
+        "pay_p25_usd": 77500,
+        "pay_median_usd": 100000,
+        "pay_p75_usd": 129050,
+        "window_days": 90
+      },
+      {
+        "role": "Account manager",
+        "band": "Senior",
+        "postings_with_pay": 133,
+        "pay_p25_usd": 103264,
+        "pay_median_usd": 135000,
+        "pay_p75_usd": 167500,
+        "window_days": 90
+      },
+      {
+        "role": "Account manager",
+        "band": "Management",
+        "postings_with_pay": 47,
+        "pay_p25_usd": 117100,
+        "pay_median_usd": 132500,
+        "pay_p75_usd": 153750,
+        "window_days": 90
+      },
+      {
+        "role": "Accountant",
+        "band": "Senior",
+        "postings_with_pay": 75,
+        "pay_p25_usd": 81125,
+        "pay_median_usd": 100000,
+        "pay_p75_usd": 113750,
+        "window_days": 90
+      },
+      {
+        "role": "Backend engineer",
+        "band": "Senior",
+        "postings_with_pay": 51,
+        "pay_p25_usd": 102720,
+        "pay_median_usd": 180000,
+        "pay_p75_usd": 202491,
+        "window_days": 90
+      },
+      {
+        "role": "Backend engineer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 32,
+        "pay_p25_usd": 181000,
+        "pay_median_usd": 225000,
+        "pay_p75_usd": 249625,
+        "window_days": 90
+      },
+      {
+        "role": "Business analyst",
+        "band": "Senior",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 106250,
+        "pay_median_usd": 116050,
+        "pay_p75_usd": 129150,
+        "window_days": 90
+      },
+      {
+        "role": "Cloud engineer",
+        "band": "Senior",
+        "postings_with_pay": 50,
+        "pay_p25_usd": 131375,
+        "pay_median_usd": 152500,
+        "pay_p75_usd": 192000,
+        "window_days": 90
+      },
+      {
+        "role": "Customer success manager",
+        "band": "Mid-level",
+        "postings_with_pay": 81,
+        "pay_p25_usd": 75000,
+        "pay_median_usd": 86542,
+        "pay_p75_usd": 115000,
+        "window_days": 90
+      },
+      {
+        "role": "Customer success manager",
+        "band": "Senior",
+        "postings_with_pay": 75,
+        "pay_p25_usd": 112569,
+        "pay_median_usd": 132200,
+        "pay_p75_usd": 157250,
+        "window_days": 90
+      },
+      {
+        "role": "Customer support",
+        "band": "Mid-level",
+        "postings_with_pay": 26,
+        "pay_p25_usd": 51750,
+        "pay_median_usd": 70625,
+        "pay_p75_usd": 106500,
+        "window_days": 90
+      },
+      {
+        "role": "Data analyst",
+        "band": "Mid-level",
+        "postings_with_pay": 20,
+        "pay_p25_usd": 88006,
+        "pay_median_usd": 98693,
+        "pay_p75_usd": 123250,
+        "window_days": 90
+      },
+      {
+        "role": "Data analyst",
+        "band": "Senior",
+        "postings_with_pay": 30,
+        "pay_p25_usd": 108750,
+        "pay_median_usd": 119225,
+        "pay_p75_usd": 144150,
+        "window_days": 90
+      },
+      {
+        "role": "Data engineer",
+        "band": "Mid-level",
+        "postings_with_pay": 52,
+        "pay_p25_usd": 121608,
+        "pay_median_usd": 136465,
+        "pay_p75_usd": 168750,
+        "window_days": 90
+      },
+      {
+        "role": "Data engineer",
+        "band": "Senior",
+        "postings_with_pay": 131,
+        "pay_p25_usd": 130544,
+        "pay_median_usd": 159319,
+        "pay_p75_usd": 192500,
+        "window_days": 90
+      },
+      {
+        "role": "Data engineer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 53,
+        "pay_p25_usd": 166451,
+        "pay_median_usd": 205000,
+        "pay_p75_usd": 237500,
+        "window_days": 90
+      },
+      {
+        "role": "Data engineer",
+        "band": "Management",
+        "postings_with_pay": 24,
+        "pay_p25_usd": 177500,
+        "pay_median_usd": 211275,
+        "pay_p75_usd": 241281,
+        "window_days": 90
+      },
+      {
+        "role": "Data scientist",
+        "band": "Mid-level",
+        "postings_with_pay": 26,
+        "pay_p25_usd": 125500,
+        "pay_median_usd": 142500,
+        "pay_p75_usd": 182250,
+        "window_days": 90
+      },
+      {
+        "role": "Data scientist",
+        "band": "Senior",
+        "postings_with_pay": 45,
+        "pay_p25_usd": 141346,
+        "pay_median_usd": 172500,
+        "pay_p75_usd": 192100,
+        "window_days": 90
+      },
+      {
+        "role": "Data scientist",
+        "band": "Staff & Principal",
+        "postings_with_pay": 20,
+        "pay_p25_usd": 199125,
+        "pay_median_usd": 217400,
+        "pay_p75_usd": 233275,
+        "window_days": 90
+      },
+      {
+        "role": "Devops engineer",
+        "band": "Senior",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 111875,
+        "pay_median_usd": 147500,
+        "pay_p75_usd": 170000,
+        "window_days": 90
+      },
+      {
+        "role": "Engineering manager",
+        "band": "Senior",
+        "postings_with_pay": 71,
+        "pay_p25_usd": 160958,
+        "pay_median_usd": 215000,
+        "pay_p75_usd": 260125,
+        "window_days": 90
+      },
+      {
+        "role": "Engineering manager",
+        "band": "Management",
+        "postings_with_pay": 172,
+        "pay_p25_usd": 164000,
+        "pay_median_usd": 202738,
+        "pay_p75_usd": 234125,
+        "window_days": 90
+      },
+      {
+        "role": "Financial analyst",
+        "band": "Senior",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 82930,
+        "pay_median_usd": 111750,
+        "pay_p75_usd": 129750,
+        "window_days": 90
+      },
+      {
+        "role": "Full stack engineer",
+        "band": "Senior",
+        "postings_with_pay": 57,
+        "pay_p25_usd": 135000,
+        "pay_median_usd": 172500,
+        "pay_p75_usd": 192500,
+        "window_days": 90
+      },
+      {
+        "role": "Machine learning engineer",
+        "band": "Senior",
+        "postings_with_pay": 31,
+        "pay_p25_usd": 195025,
+        "pay_median_usd": 200000,
+        "pay_p75_usd": 232278,
+        "window_days": 90
+      },
+      {
+        "role": "Machine learning engineer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 33,
+        "pay_p25_usd": 207500,
+        "pay_median_usd": 270301,
+        "pay_p75_usd": 289530,
+        "window_days": 90
+      },
+      {
+        "role": "Marketing manager",
+        "band": "Mid-level",
+        "postings_with_pay": 154,
+        "pay_p25_usd": 92562,
+        "pay_median_usd": 115318,
+        "pay_p75_usd": 135000,
+        "window_days": 90
+      },
+      {
+        "role": "Marketing manager",
+        "band": "Senior",
+        "postings_with_pay": 196,
+        "pay_p25_usd": 121502,
+        "pay_median_usd": 147000,
+        "pay_p75_usd": 167857,
+        "window_days": 90
+      },
+      {
+        "role": "Marketing specialist",
+        "band": "Mid-level",
+        "postings_with_pay": 22,
+        "pay_p25_usd": 34312,
+        "pay_median_usd": 66139,
+        "pay_p75_usd": 87500,
+        "window_days": 90
+      },
+      {
+        "role": "Network engineer",
+        "band": "Senior",
+        "postings_with_pay": 21,
+        "pay_p25_usd": 87000,
+        "pay_median_usd": 132500,
+        "pay_p75_usd": 192500,
+        "window_days": 90
+      },
+      {
+        "role": "Operations manager",
+        "band": "Mid-level",
+        "postings_with_pay": 54,
+        "pay_p25_usd": 92736,
+        "pay_median_usd": 111969,
+        "pay_p75_usd": 131875,
+        "window_days": 90
+      },
+      {
+        "role": "Operations manager",
+        "band": "Senior",
+        "postings_with_pay": 84,
+        "pay_p25_usd": 130798,
+        "pay_median_usd": 150000,
+        "pay_p75_usd": 166616,
+        "window_days": 90
+      },
+      {
+        "role": "Operations manager",
+        "band": "Management",
+        "postings_with_pay": 84,
+        "pay_p25_usd": 97500,
+        "pay_median_usd": 126000,
+        "pay_p75_usd": 152625,
+        "window_days": 90
+      },
+      {
+        "role": "Operations specialist",
+        "band": "Mid-level",
+        "postings_with_pay": 34,
+        "pay_p25_usd": 69519,
+        "pay_median_usd": 77875,
+        "pay_p75_usd": 89788,
+        "window_days": 90
+      },
+      {
+        "role": "Partnerships manager",
+        "band": "Mid-level",
+        "postings_with_pay": 29,
+        "pay_p25_usd": 90000,
+        "pay_median_usd": 117500,
+        "pay_p75_usd": 135000,
+        "window_days": 90
+      },
+      {
+        "role": "Partnerships manager",
+        "band": "Senior",
+        "postings_with_pay": 26,
+        "pay_p25_usd": 121358,
+        "pay_median_usd": 148476,
+        "pay_p75_usd": 187500,
+        "window_days": 90
+      },
+      {
+        "role": "Platform engineer",
+        "band": "Mid-level",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 122500,
+        "pay_median_usd": 149300,
+        "pay_p75_usd": 205500,
+        "window_days": 90
+      },
+      {
+        "role": "Platform engineer",
+        "band": "Senior",
+        "postings_with_pay": 110,
+        "pay_p25_usd": 124486,
+        "pay_median_usd": 171850,
+        "pay_p75_usd": 198188,
+        "window_days": 90
+      },
+      {
+        "role": "Platform engineer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 85,
+        "pay_p25_usd": 175000,
+        "pay_median_usd": 211600,
+        "pay_p75_usd": 260450,
+        "window_days": 90
+      },
+      {
+        "role": "Platform engineer",
+        "band": "Management",
+        "postings_with_pay": 27,
+        "pay_p25_usd": 101095,
+        "pay_median_usd": 202500,
+        "pay_p75_usd": 265000,
+        "window_days": 90
+      },
+      {
+        "role": "Product designer",
+        "band": "Senior",
+        "postings_with_pay": 52,
+        "pay_p25_usd": 141875,
+        "pay_median_usd": 166750,
+        "pay_p75_usd": 185625,
+        "window_days": 90
+      },
+      {
+        "role": "Product designer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 22,
+        "pay_p25_usd": 171652,
+        "pay_median_usd": 192900,
+        "pay_p75_usd": 205312,
+        "window_days": 90
+      },
+      {
+        "role": "Product manager",
+        "band": "Mid-level",
+        "postings_with_pay": 151,
+        "pay_p25_usd": 112450,
+        "pay_median_usd": 135000,
+        "pay_p75_usd": 164205,
+        "window_days": 90
+      },
+      {
+        "role": "Product manager",
+        "band": "Senior",
+        "postings_with_pay": 337,
+        "pay_p25_usd": 145000,
+        "pay_median_usd": 167500,
+        "pay_p75_usd": 190000,
+        "window_days": 90
+      },
+      {
+        "role": "Product manager",
+        "band": "Staff & Principal",
+        "postings_with_pay": 153,
+        "pay_p25_usd": 180000,
+        "pay_median_usd": 207500,
+        "pay_p75_usd": 234600,
+        "window_days": 90
+      },
+      {
+        "role": "Product manager",
+        "band": "Management",
+        "postings_with_pay": 29,
+        "pay_p25_usd": 150220,
+        "pay_median_usd": 178750,
+        "pay_p75_usd": 197500,
+        "window_days": 90
+      },
+      {
+        "role": "Project manager",
+        "band": "Mid-level",
+        "postings_with_pay": 84,
+        "pay_p25_usd": 82500,
+        "pay_median_usd": 105000,
+        "pay_p75_usd": 130125,
+        "window_days": 90
+      },
+      {
+        "role": "Project manager",
+        "band": "Senior",
+        "postings_with_pay": 81,
+        "pay_p25_usd": 111439,
+        "pay_median_usd": 130000,
+        "pay_p75_usd": 145000,
+        "window_days": 90
+      },
+      {
+        "role": "Qa engineer",
+        "band": "Senior",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 77100,
+        "pay_median_usd": 84906,
+        "pay_p75_usd": 128750,
+        "window_days": 90
+      },
+      {
+        "role": "Recruiter",
+        "band": "Mid-level",
+        "postings_with_pay": 31,
+        "pay_p25_usd": 81250,
+        "pay_median_usd": 92500,
+        "pay_p75_usd": 116200,
+        "window_days": 90
+      },
+      {
+        "role": "Recruiter",
+        "band": "Senior",
+        "postings_with_pay": 42,
+        "pay_p25_usd": 113666,
+        "pay_median_usd": 142475,
+        "pay_p75_usd": 156875,
+        "window_days": 90
+      },
+      {
+        "role": "Sales development representative",
+        "band": "Junior",
+        "postings_with_pay": 46,
+        "pay_p25_usd": 52418,
+        "pay_median_usd": 64925,
+        "pay_p75_usd": 72500,
+        "window_days": 90
+      },
+      {
+        "role": "Sales development representative",
+        "band": "Mid-level",
+        "postings_with_pay": 23,
+        "pay_p25_usd": 55750,
+        "pay_median_usd": 73500,
+        "pay_p75_usd": 95000,
+        "window_days": 90
+      },
+      {
+        "role": "Sales engineer",
+        "band": "Mid-level",
+        "postings_with_pay": 37,
+        "pay_p25_usd": 95000,
+        "pay_median_usd": 124125,
+        "pay_p75_usd": 165000,
+        "window_days": 90
+      },
+      {
+        "role": "Sales engineer",
+        "band": "Senior",
+        "postings_with_pay": 50,
+        "pay_p25_usd": 143688,
+        "pay_median_usd": 177500,
+        "pay_p75_usd": 207410,
+        "window_days": 90
+      },
+      {
+        "role": "Sales manager",
+        "band": "Mid-level",
+        "postings_with_pay": 78,
+        "pay_p25_usd": 80000,
+        "pay_median_usd": 112500,
+        "pay_p75_usd": 142500,
+        "window_days": 90
+      },
+      {
+        "role": "Sales manager",
+        "band": "Senior",
+        "postings_with_pay": 55,
+        "pay_p25_usd": 123750,
+        "pay_median_usd": 153990,
+        "pay_p75_usd": 181425,
+        "window_days": 90
+      },
+      {
+        "role": "Sales manager",
+        "band": "Management",
+        "postings_with_pay": 59,
+        "pay_p25_usd": 121500,
+        "pay_median_usd": 140000,
+        "pay_p75_usd": 167500,
+        "window_days": 90
+      },
+      {
+        "role": "Security engineer",
+        "band": "Mid-level",
+        "postings_with_pay": 42,
+        "pay_p25_usd": 125971,
+        "pay_median_usd": 163750,
+        "pay_p75_usd": 201594,
+        "window_days": 90
+      },
+      {
+        "role": "Security engineer",
+        "band": "Senior",
+        "postings_with_pay": 168,
+        "pay_p25_usd": 117091,
+        "pay_median_usd": 167500,
+        "pay_p75_usd": 205000,
+        "window_days": 90
+      },
+      {
+        "role": "Security engineer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 58,
+        "pay_p25_usd": 192375,
+        "pay_median_usd": 216500,
+        "pay_p75_usd": 248375,
+        "window_days": 90
+      },
+      {
+        "role": "Site reliability engineer",
+        "band": "Senior",
+        "postings_with_pay": 29,
+        "pay_p25_usd": 140000,
+        "pay_median_usd": 158650,
+        "pay_p75_usd": 172150,
+        "window_days": 90
+      },
+      {
+        "role": "Software engineer",
+        "band": "Junior",
+        "postings_with_pay": 44,
+        "pay_p25_usd": 93538,
+        "pay_median_usd": 126250,
+        "pay_p75_usd": 152489,
+        "window_days": 90
+      },
+      {
+        "role": "Software engineer",
+        "band": "Mid-level",
+        "postings_with_pay": 93,
+        "pay_p25_usd": 125000,
+        "pay_median_usd": 145000,
+        "pay_p75_usd": 184408,
+        "window_days": 90
+      },
+      {
+        "role": "Software engineer",
+        "band": "Senior",
+        "postings_with_pay": 452,
+        "pay_p25_usd": 135000,
+        "pay_median_usd": 175000,
+        "pay_p75_usd": 202482,
+        "window_days": 90
+      },
+      {
+        "role": "Software engineer",
+        "band": "Staff & Principal",
+        "postings_with_pay": 287,
+        "pay_p25_usd": 165426,
+        "pay_median_usd": 217000,
+        "pay_p75_usd": 248875,
+        "window_days": 90
+      },
+      {
+        "role": "Software engineer",
+        "band": "Management",
+        "postings_with_pay": 45,
+        "pay_p25_usd": 130066,
+        "pay_median_usd": 189500,
+        "pay_p75_usd": 226200,
+        "window_days": 90
+      },
+      {
+        "role": "Solutions engineer",
+        "band": "Mid-level",
+        "postings_with_pay": 28,
+        "pay_p25_usd": 125125,
+        "pay_median_usd": 167500,
+        "pay_p75_usd": 207738,
+        "window_days": 90
+      },
+      {
+        "role": "Solutions engineer",
+        "band": "Senior",
+        "postings_with_pay": 53,
+        "pay_p25_usd": 147000,
+        "pay_median_usd": 171500,
+        "pay_p75_usd": 205100,
+        "window_days": 90
+      },
+      {
+        "role": "Support specialist",
+        "band": "Mid-level",
+        "postings_with_pay": 33,
+        "pay_p25_usd": 53250,
+        "pay_median_usd": 62000,
+        "pay_p75_usd": 70000,
+        "window_days": 90
+      }
+    ]
+  }
+}
