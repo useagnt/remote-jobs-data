@@ -5,17 +5,17 @@ where they can hire, which professions and seniority levels they ask for, and wh
 where pay is stated. Counted by [RemoteHunt](https://remotehunt.app) from its public index of remote job
 postings, with the same rules as its [remote job market stats page](https://remotehunt.app/remote-job-market-stats).
 
-**As of 2026-11-22** (UTC). Refreshed every Monday.
+**As of 2026-11-23** (UTC). Refreshed every Monday.
 
 ## Headline
 
-- Open remote postings: **66,648**
-- Hire worldwide: **1,414** (2.1%)
-- Hire in exactly one country: **33,225** (49.9%)
-- Hire in several countries or a region: **8,980** (13.5%)
-- United States only: **19,215** (28.8%)
-- Do not say where they hire: **23,029** (34.6%)
-- State pay: **21,788** (32.7%)
+- Open remote postings: **66,055**, -593 vs 2026-11-22
+- Hire worldwide: **1,399** (2.1%), -15 vs 2026-11-22
+- Hire in exactly one country: **32,761** (49.6%), -464 vs 2026-11-22
+- Hire in several countries or a region: **8,850** (13.4%), -130 vs 2026-11-22
+- United States only: **18,983** (28.7%), -232 vs 2026-11-22
+- Do not say where they hire: **22,925** (34.7%), -104 vs 2026-11-22
+- State pay: **21,496** (32.5%), -292 vs 2026-11-22
 
 ## Files
 
@@ -27,12 +27,13 @@ postings, with the same rules as its [remote job market stats page](https://remo
 |---|---|---|
 | `summary.csv` | 9 | `metric`, `value`, `share_pct`, `previous_value`, `change`, `previous_as_of` |
 | `geography.csv` | 4 | `scope`, `open`, `share_pct`, `previous_open`, `change_open` |
-| `countries.csv` | 35 | `code`, `name`, `open`, `share_pct`, `named`, `single_country`, `with_stated_pay`, `median_pay_usd`, `previous_open`, `change_open` |
-| `country_families.csv` | 430 | `country_code`, `country`, `family`, `open`, `previous_open`, `change_open` |
+| `countries.csv` | 36 | `code`, `name`, `open`, `share_pct`, `named`, `single_country`, `with_stated_pay`, `median_pay_usd`, `previous_open`, `change_open` |
+| `country_families.csv` | 441 | `country_code`, `country`, `family`, `open`, `previous_open`, `change_open` |
 | `professions.csv` | 85 | `profession`, `open`, `share_pct`, `with_stated_pay`, `previous_open`, `change_open` |
 | `seniority.csv` | 7 | `band`, `open`, `share_pct`, `with_stated_pay`, `pay_p25_usd`, `pay_median_usd`, `pay_p75_usd`, `previous_open`, `change_open` |
 | `pay_by_role.csv` | 43 | `role`, `postings_with_pay`, `pay_p25_usd`, `pay_median_usd`, `pay_p75_usd`, `window_days` |
 | `pay_by_role_seniority.csv` | 74 | `role`, `band`, `postings_with_pay`, `pay_p25_usd`, `pay_median_usd`, `pay_p75_usd`, `window_days` |
+| `country_league.csv` | 36 | `rank`, `code`, `name`, `country_page`, `open`, `share_pct`, `only_country`, `with_others_or_region`, `anywhere`, `named`, `only_country_with_stated_pay`, `only_country_median_pay_usd`, `previous_open`, `change_open` |
 
 ## Definitions
 
@@ -51,6 +52,8 @@ postings, with the same rules as its [remote job market stats page](https://remo
 - **family**: A group of professions (Engineering, Sales, ...) as on the site's country pages.
 - **seniority**: Junior (intern, junior, entry), Mid-level, Senior, Staff & Principal (lead, staff, principal), Management (manager, director, VP, C-level), Other, Not stated.
 - **change**: Value minus the value in the previous edition (normally one week earlier); empty when either value is not measured.
+- **country_league**: Every country with a RemoteHunt country page, plus the United States, ranked by open; country_page is its page on the site, empty when it has none. only_country: postings whose list holds that country and nothing else; with_others_or_region: postings that list it beside other countries or through a region; anywhere: postings that hire from any country. The three add up to open. share_pct is open out of open_postings in summary.csv.
+- **only_country_median_pay_usd**: Median of the annual US-dollar midpoints of the only_country postings that state pay; empty under 20 such postings.
 
 ## Method
 
@@ -65,10 +68,12 @@ postings, with the same rules as its [remote job market stats page](https://remo
 
 ## Licence
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it for anything, including
-commercially, with attribution: "Source: RemoteHunt remote jobs data, https://remotehunt.app" with a link to
-https://remotehunt.app.
+The data (everything under `latest/` and `editions/`, and the figures in this README) is
+licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); the full legal code
+is in `LICENSE`. Use it for anything, including commercially, with attribution:
+"Source: RemoteHunt remote jobs data, https://remotehunt.app" with a link to https://remotehunt.app. The builder script
+(`scripts/build_public_dataset.py`) is released under the same licence.
 
 ## Editions
 
-[2026-11-22](editions/2026-11-22/)
+[2026-11-23](editions/2026-11-23/), [2026-11-22](editions/2026-11-22/)

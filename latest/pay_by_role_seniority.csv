@@ -1,75 +1,75 @@
 role,band,postings_with_pay,pay_p25_usd,pay_median_usd,pay_p75_usd,window_days
-Account executive,Junior,33,69500,95650,130000,90
-Account executive,Mid-level,348,104562,135000,185000,90
-Account executive,Senior,312,137500,170000,300000,90
-Account manager,Mid-level,215,77500,100000,129050,90
-Account manager,Senior,133,103264,135000,167500,90
-Account manager,Management,47,117100,132500,153750,90
+Account executive,Junior,34,68000,92825,127500,90
+Account executive,Mid-level,340,105000,136250,185000,90
+Account executive,Senior,309,137500,170000,293000,90
+Account manager,Mid-level,213,77500,100000,129100,90
+Account manager,Senior,130,103398,135000,169375,90
+Account manager,Management,47,116600,131500,153750,90
 Accountant,Senior,75,81125,100000,113750,90
-Backend engineer,Senior,51,102720,180000,202491,90
-Backend engineer,Staff & Principal,32,181000,225000,249625,90
+Backend engineer,Senior,53,105100,169500,200000,90
+Backend engineer,Staff & Principal,31,176500,220000,249750,90
 Business analyst,Senior,23,106250,116050,129150,90
-Cloud engineer,Senior,50,131375,152500,192000,90
+Cloud engineer,Senior,49,132500,152500,192500,90
 Customer success manager,Mid-level,81,75000,86542,115000,90
-Customer success manager,Senior,75,112569,132200,157250,90
-Customer support,Mid-level,26,51750,70625,106500,90
+Customer success manager,Senior,71,112569,130781,157250,90
+Customer support,Mid-level,25,51250,65250,105000,90
 Data analyst,Mid-level,20,88006,98693,123250,90
-Data analyst,Senior,30,108750,119225,144150,90
-Data engineer,Mid-level,52,121608,136465,168750,90
-Data engineer,Senior,131,130544,159319,192500,90
-Data engineer,Staff & Principal,53,166451,205000,237500,90
+Data analyst,Senior,30,112500,120500,148625,90
+Data engineer,Mid-level,52,121608,137250,172500,90
+Data engineer,Senior,123,129120,156188,192500,90
+Data engineer,Staff & Principal,53,170000,206000,240000,90
 Data engineer,Management,24,177500,211275,241281,90
 Data scientist,Mid-level,26,125500,142500,182250,90
-Data scientist,Senior,45,141346,172500,192100,90
-Data scientist,Staff & Principal,20,199125,217400,233275,90
-Devops engineer,Senior,23,111875,147500,170000,90
-Engineering manager,Senior,71,160958,215000,260125,90
-Engineering manager,Management,172,164000,202738,234125,90
+Data scientist,Senior,44,141010,171773,188650,90
+Data scientist,Staff & Principal,21,200000,217400,235000,90
+Devops engineer,Senior,21,121750,147500,175000,90
+Engineering manager,Senior,71,160958,214500,260000,90
+Engineering manager,Management,168,161875,203988,234125,90
 Financial analyst,Senior,23,82930,111750,129750,90
-Full stack engineer,Senior,57,135000,172500,192500,90
-Machine learning engineer,Senior,31,195025,200000,232278,90
-Machine learning engineer,Staff & Principal,33,207500,270301,289530,90
-Marketing manager,Mid-level,154,92562,115318,135000,90
-Marketing manager,Senior,196,121502,147000,167857,90
-Marketing specialist,Mid-level,22,34312,66139,87500,90
+Full stack engineer,Senior,59,131620,170000,191250,90
+Machine learning engineer,Senior,30,195012,200000,232389,90
+Machine learning engineer,Staff & Principal,32,213500,273150,289530,90
+Marketing manager,Mid-level,155,92875,115636,135000,90
+Marketing manager,Senior,191,121335,146500,168214,90
+Marketing specialist,Mid-level,21,33750,67278,87500,90
 Network engineer,Senior,21,87000,132500,192500,90
-Operations manager,Mid-level,54,92736,111969,131875,90
-Operations manager,Senior,84,130798,150000,166616,90
+Operations manager,Mid-level,53,95000,113500,132500,90
+Operations manager,Senior,82,130599,149600,167547,90
 Operations manager,Management,84,97500,126000,152625,90
-Operations specialist,Mid-level,34,69519,77875,89788,90
+Operations specialist,Mid-level,34,66094,77875,89788,90
 Partnerships manager,Mid-level,29,90000,117500,135000,90
 Partnerships manager,Senior,26,121358,148476,187500,90
 Platform engineer,Mid-level,23,122500,149300,205500,90
-Platform engineer,Senior,110,124486,171850,198188,90
-Platform engineer,Staff & Principal,85,175000,211600,260450,90
+Platform engineer,Senior,107,124158,171850,197925,90
+Platform engineer,Staff & Principal,84,174375,217681,260450,90
 Platform engineer,Management,27,101095,202500,265000,90
-Product designer,Senior,52,141875,166750,185625,90
+Product designer,Senior,50,140625,166750,186875,90
 Product designer,Staff & Principal,22,171652,192900,205312,90
-Product manager,Mid-level,151,112450,135000,164205,90
-Product manager,Senior,337,145000,167500,190000,90
-Product manager,Staff & Principal,153,180000,207500,234600,90
-Product manager,Management,29,150220,178750,197500,90
-Project manager,Mid-level,84,82500,105000,130125,90
-Project manager,Senior,81,111439,130000,145000,90
+Product manager,Mid-level,150,112425,135000,160750,90
+Product manager,Senior,329,148000,170000,190250,90
+Product manager,Staff & Principal,151,180000,207500,234600,90
+Product manager,Management,28,150197,177375,200203,90
+Project manager,Mid-level,81,82500,103100,130000,90
+Project manager,Senior,79,110720,130000,145000,90
 Qa engineer,Senior,23,77100,84906,128750,90
 Recruiter,Mid-level,31,81250,92500,116200,90
 Recruiter,Senior,42,113666,142475,156875,90
-Sales development representative,Junior,46,52418,64925,72500,90
-Sales development representative,Mid-level,23,55750,73500,95000,90
+Sales development representative,Junior,45,52390,64850,72500,90
+Sales development representative,Mid-level,22,55125,69250,97500,90
 Sales engineer,Mid-level,37,95000,124125,165000,90
-Sales engineer,Senior,50,143688,177500,207410,90
-Sales manager,Mid-level,78,80000,112500,142500,90
-Sales manager,Senior,55,123750,153990,181425,90
-Sales manager,Management,59,121500,140000,167500,90
+Sales engineer,Senior,49,143250,175000,200000,90
+Sales manager,Mid-level,75,83750,112500,143750,90
+Sales manager,Senior,49,125000,153990,182500,90
+Sales manager,Management,58,123188,140000,168750,90
 Security engineer,Mid-level,42,125971,163750,201594,90
-Security engineer,Senior,168,117091,167500,205000,90
-Security engineer,Staff & Principal,58,192375,216500,248375,90
-Site reliability engineer,Senior,29,140000,158650,172150,90
-Software engineer,Junior,44,93538,126250,152489,90
-Software engineer,Mid-level,93,125000,145000,184408,90
-Software engineer,Senior,453,135000,175000,202482,90
-Software engineer,Staff & Principal,286,165213,216500,247950,90
-Software engineer,Management,45,130066,189500,226200,90
-Solutions engineer,Mid-level,28,125125,167500,207738,90
-Solutions engineer,Senior,53,147000,171500,205100,90
-Support specialist,Mid-level,33,53250,62000,70000,90
+Security engineer,Senior,164,117091,167500,205295,90
+Security engineer,Staff & Principal,57,191500,218000,250000,90
+Site reliability engineer,Senior,28,141875,160212,177750,90
+Software engineer,Junior,44,93538,127500,157622,90
+Software engineer,Mid-level,91,125300,147500,184454,90
+Software engineer,Senior,454,131294,175000,202482,90
+Software engineer,Staff & Principal,284,164434,215500,248438,90
+Software engineer,Management,44,130049,189750,226525,90
+Solutions engineer,Mid-level,26,118375,151000,206500,90
+Solutions engineer,Senior,54,147125,169750,205075,90
+Support specialist,Mid-level,30,51638,60750,70000,90

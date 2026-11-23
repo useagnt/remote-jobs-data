@@ -1,0 +1,442 @@
+country_code,country,family,open,previous_open,change_open
+,Anywhere (hires worldwide),Engineering,358,362,-4
+,Anywhere (hires worldwide),Marketing,161,161,0
+,Anywhere (hires worldwide),Operations,141,144,-3
+,Anywhere (hires worldwide),Sales,125,131,-6
+,Anywhere (hires worldwide),HR and admin,113,115,-2
+,Anywhere (hires worldwide),Product,112,114,-2
+,Anywhere (hires worldwide),Finance and legal,88,89,-1
+,Anywhere (hires worldwide),Customer support,62,61,1
+,Anywhere (hires worldwide),Design,40,40,0
+,Anywhere (hires worldwide),Data,33,34,-1
+,Anywhere (hires worldwide),Research,22,22,0
+AR,Argentina,Engineering,955,966,-11
+AR,Argentina,Sales,390,405,-15
+AR,Argentina,Operations,359,366,-7
+AR,Argentina,Marketing,346,350,-4
+AR,Argentina,HR and admin,232,241,-9
+AR,Argentina,Customer support,184,185,-1
+AR,Argentina,Finance and legal,181,200,-19
+AR,Argentina,Product,165,181,-16
+AR,Argentina,Design,85,84,1
+AR,Argentina,Data,70,71,-1
+AR,Argentina,Leadership,55,326,-271
+AR,Argentina,Video and media,38,43,-5
+AR,Argentina,Research,34,36,-2
+AU,Australia,Engineering,519,525,-6
+AU,Australia,Sales,328,333,-5
+AU,Australia,Marketing,244,246,-2
+AU,Australia,Operations,204,205,-1
+AU,Australia,HR and admin,173,177,-4
+AU,Australia,Customer support,169,168,1
+AU,Australia,Product,153,155,-2
+AU,Australia,Finance and legal,122,127,-5
+AU,Australia,Design,59,59,0
+AU,Australia,Data,49,49,0
+AU,Australia,Research,40,42,-2
+AU,Australia,Video and media,25,30,-5
+BD,Bangladesh,Engineering,437,441,-4
+BD,Bangladesh,Sales,208,213,-5
+BD,Bangladesh,Marketing,188,190,-2
+BD,Bangladesh,Operations,159,163,-4
+BD,Bangladesh,HR and admin,131,134,-3
+BD,Bangladesh,Product,124,126,-2
+BD,Bangladesh,Finance and legal,108,110,-2
+BD,Bangladesh,Customer support,106,106,0
+BD,Bangladesh,Design,47,47,0
+BD,Bangladesh,Data,34,35,-1
+BD,Bangladesh,Research,34,36,-2
+BD,Bangladesh,Video and media,24,29,-5
+BR,Brazil,Engineering,1512,1528,-16
+BR,Brazil,Sales,481,493,-12
+BR,Brazil,Operations,475,485,-10
+BR,Brazil,Marketing,375,379,-4
+BR,Brazil,Customer support,272,277,-5
+BR,Brazil,HR and admin,261,270,-9
+BR,Brazil,Finance and legal,232,252,-20
+BR,Brazil,Product,220,234,-14
+BR,Brazil,Data,130,128,2
+BR,Brazil,Design,124,124,0
+BR,Brazil,Leadership,55,326,-271
+BR,Brazil,Research,42,43,-1
+BR,Brazil,Video and media,38,44,-6
+BG,Bulgaria,Engineering,1024,1078,-54
+BG,Bulgaria,Sales,457,480,-23
+BG,Bulgaria,Marketing,359,366,-7
+BG,Bulgaria,Operations,325,338,-13
+BG,Bulgaria,Product,272,290,-18
+BG,Bulgaria,Customer support,268,273,-5
+BG,Bulgaria,Finance and legal,217,244,-27
+BG,Bulgaria,HR and admin,191,197,-6
+BG,Bulgaria,Design,104,105,-1
+BG,Bulgaria,Data,76,80,-4
+BG,Bulgaria,Leadership,64,357,-293
+BG,Bulgaria,Research,51,53,-2
+CA,Canada,Engineering,1463,1517,-54
+CA,Canada,Sales,686,715,-29
+CA,Canada,Marketing,516,521,-5
+CA,Canada,Operations,500,512,-12
+CA,Canada,Product,366,379,-13
+CA,Canada,Customer support,324,331,-7
+CA,Canada,HR and admin,291,297,-6
+CA,Canada,Finance and legal,278,309,-31
+CA,Canada,Design,126,135,-9
+CA,Canada,Data,118,121,-3
+CA,Canada,Research,65,66,-1
+CA,Canada,Leadership,64,357,-293
+CA,Canada,Video and media,29,34,-5
+CO,Colombia,Engineering,961,978,-17
+CO,Colombia,Sales,415,430,-15
+CO,Colombia,Marketing,356,356,0
+CO,Colombia,Operations,352,363,-11
+CO,Colombia,HR and admin,247,257,-10
+CO,Colombia,Finance and legal,213,230,-17
+CO,Colombia,Customer support,198,202,-4
+CO,Colombia,Product,169,183,-14
+CO,Colombia,Design,85,86,-1
+CO,Colombia,Data,67,68,-1
+CO,Colombia,Leadership,55,326,-271
+CO,Colombia,Video and media,39,43,-4
+CO,Colombia,Research,36,37,-1
+EG,Egypt,Engineering,666,701,-35
+EG,Egypt,Sales,311,330,-19
+EG,Egypt,Marketing,238,242,-4
+EG,Egypt,Operations,223,233,-10
+EG,Egypt,Product,158,171,-13
+EG,Egypt,HR and admin,157,162,-5
+EG,Egypt,Customer support,147,151,-4
+EG,Egypt,Finance and legal,141,164,-23
+EG,Egypt,Design,58,58,0
+EG,Egypt,Leadership,47,286,-239
+EG,Egypt,Data,44,45,-1
+EG,Egypt,Research,37,38,-1
+EG,Egypt,Video and media,24,29,-5
+DE,Germany,Engineering,1270,1318,-48
+DE,Germany,Sales,818,831,-13
+DE,Germany,Marketing,429,433,-4
+DE,Germany,Operations,423,435,-12
+DE,Germany,Customer support,351,357,-6
+DE,Germany,Product,325,342,-17
+DE,Germany,Finance and legal,262,285,-23
+DE,Germany,HR and admin,217,225,-8
+DE,Germany,Design,121,122,-1
+DE,Germany,Data,89,93,-4
+DE,Germany,Leadership,65,358,-293
+DE,Germany,Research,55,58,-3
+DE,Germany,Video and media,28,37,-9
+GH,Ghana,Engineering,591,628,-37
+GH,Ghana,Sales,274,293,-19
+GH,Ghana,Marketing,220,224,-4
+GH,Ghana,Operations,205,215,-10
+GH,Ghana,Product,157,169,-12
+GH,Ghana,HR and admin,143,148,-5
+GH,Ghana,Finance and legal,133,156,-23
+GH,Ghana,Customer support,130,133,-3
+GH,Ghana,Design,50,50,0
+GH,Ghana,Leadership,46,285,-239
+GH,Ghana,Data,41,42,-1
+GH,Ghana,Research,33,34,-1
+GR,Greece,Engineering,1037,1089,-52
+GR,Greece,Sales,453,476,-23
+GR,Greece,Customer support,357,363,-6
+GR,Greece,Marketing,356,363,-7
+GR,Greece,Operations,318,332,-14
+GR,Greece,Product,262,280,-18
+GR,Greece,Finance and legal,219,246,-27
+GR,Greece,HR and admin,188,194,-6
+GR,Greece,Design,106,107,-1
+GR,Greece,Data,76,79,-3
+GR,Greece,Leadership,64,357,-293
+GR,Greece,Research,51,53,-2
+IN,India,Engineering,912,919,-7
+IN,India,Sales,299,297,2
+IN,India,Operations,276,278,-2
+IN,India,Marketing,268,269,-1
+IN,India,Customer support,232,230,2
+IN,India,Product,192,191,1
+IN,India,HR and admin,182,184,-2
+IN,India,Finance and legal,169,173,-4
+IN,India,Data,79,80,-1
+IN,India,Design,65,66,-1
+IN,India,Research,48,50,-2
+IN,India,Video and media,25,30,-5
+ID,Indonesia,Engineering,485,490,-5
+ID,Indonesia,Sales,222,229,-7
+ID,Indonesia,Marketing,194,195,-1
+ID,Indonesia,Operations,176,178,-2
+ID,Indonesia,HR and admin,146,149,-3
+ID,Indonesia,Product,146,148,-2
+ID,Indonesia,Customer support,112,111,1
+ID,Indonesia,Finance and legal,109,112,-3
+ID,Indonesia,Design,59,60,-1
+ID,Indonesia,Data,36,38,-2
+ID,Indonesia,Research,36,38,-2
+ID,Indonesia,Video and media,29,34,-5
+IE,Ireland,Engineering,1066,1119,-53
+IE,Ireland,Sales,503,524,-21
+IE,Ireland,Marketing,365,372,-7
+IE,Ireland,Operations,316,328,-12
+IE,Ireland,Product,287,305,-18
+IE,Ireland,Customer support,235,242,-7
+IE,Ireland,Finance and legal,226,253,-27
+IE,Ireland,HR and admin,193,198,-5
+IE,Ireland,Design,105,106,-1
+IE,Ireland,Data,78,82,-4
+IE,Ireland,Leadership,64,357,-293
+IE,Ireland,Research,49,50,-1
+IT,Italy,Engineering,1021,1075,-54
+IT,Italy,Sales,496,518,-22
+IT,Italy,Marketing,353,360,-7
+IT,Italy,Operations,308,321,-13
+IT,Italy,Product,264,282,-18
+IT,Italy,Customer support,236,242,-6
+IT,Italy,Finance and legal,218,245,-27
+IT,Italy,HR and admin,192,198,-6
+IT,Italy,Design,106,108,-2
+IT,Italy,Data,75,78,-3
+IT,Italy,Leadership,66,359,-293
+IT,Italy,Research,49,51,-2
+IT,Italy,Video and media,27,34,-7
+KE,Kenya,Engineering,596,633,-37
+KE,Kenya,Sales,280,299,-19
+KE,Kenya,Marketing,223,226,-3
+KE,Kenya,Operations,219,228,-9
+KE,Kenya,Product,158,170,-12
+KE,Kenya,HR and admin,148,153,-5
+KE,Kenya,Finance and legal,138,162,-24
+KE,Kenya,Customer support,131,135,-4
+KE,Kenya,Design,49,49,0
+KE,Kenya,Leadership,46,285,-239
+KE,Kenya,Data,41,42,-1
+KE,Kenya,Research,30,32,-2
+LB,Lebanon,Engineering,586,,
+LB,Lebanon,Sales,288,,
+LB,Lebanon,Marketing,219,,
+LB,Lebanon,Operations,200,,
+LB,Lebanon,Product,154,,
+LB,Lebanon,HR and admin,147,,
+LB,Lebanon,Customer support,136,,
+LB,Lebanon,Finance and legal,130,,
+LB,Lebanon,Design,50,,
+LB,Lebanon,Leadership,46,,
+LB,Lebanon,Data,40,,
+LB,Lebanon,Research,33,,
+MY,Malaysia,Engineering,461,465,-4
+MY,Malaysia,Sales,227,233,-6
+MY,Malaysia,Marketing,195,197,-2
+MY,Malaysia,Operations,176,180,-4
+MY,Malaysia,HR and admin,152,155,-3
+MY,Malaysia,Product,127,129,-2
+MY,Malaysia,Customer support,122,121,1
+MY,Malaysia,Finance and legal,118,120,-2
+MY,Malaysia,Design,59,59,0
+MY,Malaysia,Data,37,39,-2
+MY,Malaysia,Research,32,34,-2
+MY,Malaysia,Video and media,26,31,-5
+MX,Mexico,Engineering,1120,1146,-26
+MX,Mexico,Sales,516,531,-15
+MX,Mexico,Operations,409,419,-10
+MX,Mexico,Marketing,403,406,-3
+MX,Mexico,HR and admin,261,271,-10
+MX,Mexico,Customer support,257,257,0
+MX,Mexico,Finance and legal,241,265,-24
+MX,Mexico,Product,207,225,-18
+MX,Mexico,Design,93,93,0
+MX,Mexico,Data,91,95,-4
+MX,Mexico,Leadership,62,355,-293
+MX,Mexico,Research,37,40,-3
+MX,Mexico,Video and media,35,40,-5
+NP,Nepal,Engineering,431,435,-4
+NP,Nepal,Sales,204,209,-5
+NP,Nepal,Marketing,188,190,-2
+NP,Nepal,Operations,156,159,-3
+NP,Nepal,HR and admin,129,132,-3
+NP,Nepal,Product,124,126,-2
+NP,Nepal,Finance and legal,108,110,-2
+NP,Nepal,Customer support,106,106,0
+NP,Nepal,Design,46,46,0
+NP,Nepal,Data,34,35,-1
+NP,Nepal,Research,31,33,-2
+NL,Netherlands,Engineering,1062,1114,-52
+NL,Netherlands,Sales,524,548,-24
+NL,Netherlands,Marketing,371,378,-7
+NL,Netherlands,Operations,324,336,-12
+NL,Netherlands,Product,288,306,-18
+NL,Netherlands,Customer support,241,246,-5
+NL,Netherlands,Finance and legal,225,253,-28
+NL,Netherlands,HR and admin,188,194,-6
+NL,Netherlands,Design,106,107,-1
+NL,Netherlands,Data,80,84,-4
+NL,Netherlands,Leadership,64,357,-293
+NL,Netherlands,Research,51,52,-1
+NG,Nigeria,Engineering,592,629,-37
+NG,Nigeria,Sales,282,301,-19
+NG,Nigeria,Marketing,225,228,-3
+NG,Nigeria,Operations,207,218,-11
+NG,Nigeria,Product,156,168,-12
+NG,Nigeria,HR and admin,145,150,-5
+NG,Nigeria,Finance and legal,138,161,-23
+NG,Nigeria,Customer support,133,136,-3
+NG,Nigeria,Design,52,52,0
+NG,Nigeria,Leadership,46,286,-240
+NG,Nigeria,Data,41,42,-1
+NG,Nigeria,Research,33,34,-1
+PK,Pakistan,Engineering,469,474,-5
+PK,Pakistan,Sales,226,232,-6
+PK,Pakistan,Marketing,209,211,-2
+PK,Pakistan,Operations,177,182,-5
+PK,Pakistan,HR and admin,137,140,-3
+PK,Pakistan,Finance and legal,130,134,-4
+PK,Pakistan,Product,129,132,-3
+PK,Pakistan,Customer support,122,123,-1
+PK,Pakistan,Design,48,49,-1
+PK,Pakistan,Data,40,41,-1
+PK,Pakistan,Research,34,36,-2
+PH,Philippines,Engineering,582,584,-2
+PH,Philippines,Operations,418,415,3
+PH,Philippines,Marketing,383,389,-6
+PH,Philippines,Sales,353,360,-7
+PH,Philippines,Finance and legal,350,349,1
+PH,Philippines,HR and admin,331,340,-9
+PH,Philippines,Customer support,253,258,-5
+PH,Philippines,Product,158,160,-2
+PH,Philippines,Design,110,109,1
+PH,Philippines,Data,56,58,-2
+PH,Philippines,Video and media,51,56,-5
+PH,Philippines,Research,34,36,-2
+PT,Portugal,Engineering,1111,1167,-56
+PT,Portugal,Sales,476,497,-21
+PT,Portugal,Marketing,364,371,-7
+PT,Portugal,Operations,339,352,-13
+PT,Portugal,Product,290,308,-18
+PT,Portugal,Customer support,289,293,-4
+PT,Portugal,Finance and legal,227,254,-27
+PT,Portugal,HR and admin,196,202,-6
+PT,Portugal,Design,111,113,-2
+PT,Portugal,Data,79,82,-3
+PT,Portugal,Leadership,64,357,-293
+PT,Portugal,Research,50,52,-2
+RO,Romania,Engineering,1109,1167,-58
+RO,Romania,Sales,471,496,-25
+RO,Romania,Operations,369,396,-27
+RO,Romania,Marketing,366,373,-7
+RO,Romania,Product,270,288,-18
+RO,Romania,Customer support,233,240,-7
+RO,Romania,Finance and legal,221,247,-26
+RO,Romania,HR and admin,193,199,-6
+RO,Romania,Design,108,109,-1
+RO,Romania,Data,84,88,-4
+RO,Romania,Leadership,64,357,-293
+RO,Romania,Research,52,54,-2
+RO,Romania,Video and media,27,35,-8
+RS,Serbia,Engineering,827,872,-45
+RS,Serbia,Sales,375,398,-23
+RS,Serbia,Marketing,304,311,-7
+RS,Serbia,Operations,294,316,-22
+RS,Serbia,Product,201,219,-18
+RS,Serbia,Finance and legal,175,200,-25
+RS,Serbia,HR and admin,175,180,-5
+RS,Serbia,Customer support,166,171,-5
+RS,Serbia,Design,77,78,-1
+RS,Serbia,Leadership,61,354,-293
+RS,Serbia,Data,55,56,-1
+RS,Serbia,Research,39,40,-1
+ZA,South Africa,Engineering,626,665,-39
+ZA,South Africa,Sales,399,410,-11
+ZA,South Africa,Marketing,281,282,-1
+ZA,South Africa,Operations,276,288,-12
+ZA,South Africa,HR and admin,204,212,-8
+ZA,South Africa,Customer support,196,199,-3
+ZA,South Africa,Finance and legal,187,210,-23
+ZA,South Africa,Product,166,178,-12
+ZA,South Africa,Design,55,55,0
+ZA,South Africa,Data,46,47,-1
+ZA,South Africa,Leadership,46,285,-239
+ZA,South Africa,Research,30,33,-3
+ZA,South Africa,Video and media,27,32,-5
+ES,Spain,Engineering,1217,1269,-52
+ES,Spain,Sales,538,558,-20
+ES,Spain,Marketing,398,409,-11
+ES,Spain,Operations,380,404,-24
+ES,Spain,Product,316,334,-18
+ES,Spain,Customer support,304,308,-4
+ES,Spain,Finance and legal,239,266,-27
+ES,Spain,HR and admin,207,212,-5
+ES,Spain,Design,121,122,-1
+ES,Spain,Data,84,87,-3
+ES,Spain,Leadership,64,357,-293
+ES,Spain,Research,50,51,-1
+ES,Spain,Video and media,29,37,-8
+LK,Sri Lanka,Engineering,438,444,-6
+LK,Sri Lanka,Sales,209,214,-5
+LK,Sri Lanka,Marketing,197,199,-2
+LK,Sri Lanka,Operations,161,164,-3
+LK,Sri Lanka,HR and admin,130,133,-3
+LK,Sri Lanka,Product,124,126,-2
+LK,Sri Lanka,Finance and legal,115,116,-1
+LK,Sri Lanka,Customer support,108,109,-1
+LK,Sri Lanka,Design,48,48,0
+LK,Sri Lanka,Data,36,37,-1
+LK,Sri Lanka,Research,31,33,-2
+TR,Turkey,Engineering,759,801,-42
+TR,Turkey,Sales,358,381,-23
+TR,Turkey,Marketing,275,281,-6
+TR,Turkey,Operations,232,244,-12
+TR,Turkey,Product,199,218,-19
+TR,Turkey,Finance and legal,173,198,-25
+TR,Turkey,HR and admin,169,175,-6
+TR,Turkey,Customer support,159,163,-4
+TR,Turkey,Design,75,77,-2
+TR,Turkey,Leadership,62,355,-293
+TR,Turkey,Data,49,50,-1
+TR,Turkey,Research,47,48,-1
+TR,Turkey,Video and media,25,30,-5
+UA,Ukraine,Engineering,825,867,-42
+UA,Ukraine,Sales,372,393,-21
+UA,Ukraine,Marketing,340,345,-5
+UA,Ukraine,Operations,267,275,-8
+UA,Ukraine,Product,216,232,-16
+UA,Ukraine,Finance and legal,194,218,-24
+UA,Ukraine,Customer support,181,187,-6
+UA,Ukraine,HR and admin,177,180,-3
+UA,Ukraine,Design,91,92,-1
+UA,Ukraine,Data,62,63,-1
+UA,Ukraine,Leadership,62,355,-293
+UA,Ukraine,Research,39,40,-1
+AE,United Arab Emirates,Engineering,610,647,-37
+AE,United Arab Emirates,Sales,315,336,-21
+AE,United Arab Emirates,Marketing,230,234,-4
+AE,United Arab Emirates,Operations,211,218,-7
+AE,United Arab Emirates,Product,156,168,-12
+AE,United Arab Emirates,HR and admin,154,157,-3
+AE,United Arab Emirates,Customer support,139,142,-3
+AE,United Arab Emirates,Finance and legal,136,159,-23
+AE,United Arab Emirates,Design,50,50,0
+AE,United Arab Emirates,Leadership,47,286,-239
+AE,United Arab Emirates,Data,42,43,-1
+AE,United Arab Emirates,Research,32,34,-2
+GB,United Kingdom,Engineering,1270,1319,-49
+GB,United Kingdom,Sales,832,853,-21
+GB,United Kingdom,Marketing,462,470,-8
+GB,United Kingdom,Operations,443,462,-19
+GB,United Kingdom,Customer support,342,348,-6
+GB,United Kingdom,Product,314,330,-16
+GB,United Kingdom,Finance and legal,308,336,-28
+GB,United Kingdom,HR and admin,272,281,-9
+GB,United Kingdom,Design,130,132,-2
+GB,United Kingdom,Data,93,94,-1
+GB,United Kingdom,Research,81,81,0
+GB,United Kingdom,Leadership,63,356,-293
+GB,United Kingdom,Video and media,28,33,-5
+VN,Vietnam,Engineering,466,470,-4
+VN,Vietnam,Sales,221,228,-7
+VN,Vietnam,Marketing,192,193,-1
+VN,Vietnam,Operations,168,172,-4
+VN,Vietnam,HR and admin,141,144,-3
+VN,Vietnam,Product,141,143,-2
+VN,Vietnam,Finance and legal,113,116,-3
+VN,Vietnam,Customer support,109,109,0
+VN,Vietnam,Design,53,54,-1
+VN,Vietnam,Data,36,38,-2
+VN,Vietnam,Research,32,34,-2
+VN,Vietnam,Video and media,26,30,-4
